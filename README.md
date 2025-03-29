@@ -7,7 +7,11 @@
 1. Clone o repositório:
    ```sh
    git clone https://github.com/Gabriel-dev001/Api-Basica-Node.git
+   ```
+   ```sh
    cd Api-Basica-Node
+   ```
+   ```sh
    cd Back-End
    ```
 
