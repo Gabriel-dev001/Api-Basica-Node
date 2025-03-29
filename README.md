@@ -1,50 +1,53 @@
-# API Básica com Node.js
-
-Este projeto foi criado apenas para testar e relembrar conceitos básicos de desenvolvimento de APIs usando **Node.js**.
-
-## Tecnologias utilizadas
-- Node.js
-- Express 
-
-# 📞 CONTATO  
-
-👨‍💻 **Desenvolvedor:** **Gabriel** 
+## API de Login com Node.js
+**Essa API simula de uma forma bem simples um login, que se o email e senhas estão certo, ele retorna um 201 se não um 401.**
 
 
-# API de Login com Node.js
-**Este projeto foi criado para testar e relembrar conceitos básicos de desenvolvimento de APIs usando Node.js.**
+## 🐳 Rode o Docker
 
-**🚀 Tecnologias utilizadas**
-Node.js
-Express
+1. Clone o repositório:
+   ```sh
+   git clone 
+   cd Back-End
+   ```
 
-**📌 Endpoints**
+2. Construa a imagem Docker:
+   ```sh
+   docker build -t api-node .
+   ```
+3. Execute o container:
+   ```sh
+   docker run -p 3000:3000 api-node
+   ```
+
+## 📌 Endpoints
+
 🔹 POST /login
 Este endpoint verifica as credenciais do usuário e retorna os dados caso sejam válidos.
 
-**📥 Requisição**
-URL: /login
-
-**Corpo da requisição (JSON):**
-
+## Corpo da requisição (JSON):
+```json
 {
   "email": "Email@email.com",
   "senha": "123"
 }
+```
+
 **📤 Resposta de sucesso (201 - Created)**
+```json
 {
   "id": 1,
   "name": "gabriel",
   "email": "Email@email.com",
   "senha": "123"
 }
+```
 
 **❌ Resposta de erro (401 - Unauthorized)**
-*
+```json
 {
   "message": "Credenciais invalidas"
 }
+```
 
-# 📞 CONTATO  
-
+## 📞 CONTATO  
 👨‍💻 **Desenvolvedor:** **Gabriel** 
